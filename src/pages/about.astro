@@ -1,0 +1,46 @@
+
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+const pageTitle = "关于我";
+const skillColor = "navy";
+---
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type ="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+    {pageTitle}
+    </title>
+     <style define:vars={{skillColor}}>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+      .skill {
+        color: var(--skillColor);
+        font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <Navigation />
+
+
+
+  <h1>关于我</h1>
+
+  <p>我是马，家在德州市夏津县前马庄村。热爱吃饭，睡觉。</p>
+
+  <p>梦想是吃喝玩乐</p>
+  <p class="skill">不上班。😊</p>
+
+  <p>联系我：<a href="mailto:
+  990681509@qq.com "> email </a>
+    </p>
+	<Footer />
+
+  </body>
+</html>
