@@ -1,20 +1,11 @@
 
 ---
-import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = "关于我";
 const skillColor = "navy";
 ---
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type ="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <title>
-    {pageTitle}
-    </title>
-     <style define:vars={{skillColor}}>
+<style define:vars={{skillColor}}>
       h1 {
         color: purple;
         font-size: 4rem;
@@ -23,12 +14,12 @@ const skillColor = "navy";
         color: var(--skillColor);
         font-weight: bold;
         }
-    </style>
-  </head>
-  <body>
-    <Navigation />
+</style>
+  
+  
 
 
+<BaseLayout pageTitle={pageTitle}>
 
   <h1>关于我</h1>
 
@@ -40,7 +31,5 @@ const skillColor = "navy";
   <p>联系我：<a href="mailto:
   990681509@qq.com "> email </a>
     </p>
-	<Footer />
-
-  </body>
-</html>
+</BaseLayout>
+	

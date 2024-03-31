@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: '马家'
 pubDate: 2022-07-01
 description: '马家家训'
@@ -11,7 +12,6 @@ tags: ["astro", "blogging", "learning in public"]
 
 # 马家文章
 
- 发表于：2024-07-01
 
  欢迎来到我学习关于 Astro 的新！在这里，我将分享我建立新网站的学习历程。
 
